@@ -16,27 +16,27 @@ const Navbar = () => {
      "Newsletter"
   ])
 
-  const checkComponentInView = () => {
-    debugger;
-    const componentElements = document.querySelectorAll('.components');
+  // const checkComponentInView = () => {
+  //   debugger;
+  //   const componentElements = document.querySelectorAll('.components');
 
-    for (let i = 0; i < componentElements.length; i++) {
-      const element = componentElements[i];
-      const rect = element.getBoundingClientRect();
+  //   for (let i = 0; i < componentElements.length; i++) {
+  //     const element = componentElements[i];
+  //     const rect = element.getBoundingClientRect();
 
-      if (rect.x >= 0 && (rect.height - rect.bottom) <= window.innerHeight) {
-        setCurrentComponentIndex(i);
-        break;
-      }
-    }
-  };
+  //     if (rect.x >= 0 && (rect.height - rect.bottom) <= window.innerHeight) {
+  //       setCurrentComponentIndex(i);
+  //       break;
+  //     }
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener('scroll', checkComponentInView);
-    return () => {
-      window.removeEventListener('scroll', checkComponentInView);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', checkComponentInView);
+  //   return () => {
+  //     window.removeEventListener('scroll', checkComponentInView);
+  //   };
+  // }, []);
 
   return (
     <nav className='navbar'>
@@ -66,7 +66,9 @@ const Navbar = () => {
         <ul className='navbar_links'>
         {
               navLinks.map((link, index) => {
-                return <li style={{ color: index === currentComponentIndex ? '#00d2b5' : '#000' }}>{link}</li>
+                return <li 
+                // style={{ color: index === currentComponentIndex ? '#00d2b5' : '#000' }}
+                >{link}</li>
               })
             }
         </ul>
