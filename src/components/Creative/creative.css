@@ -1,0 +1,28 @@
+.creative {
+    width: 100%;
+    position: relative;
+    padding: 60px 0;
+}
+
+.creative_container {
+    /* width: 75%; */
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* margin: 0 auto; */
+}
+
+.creative_divider {
+    width: 75%;
+    height: 1px;
+    background-color:#dee2e6!important;
+    margin: 4rem auto;
+}
+
+@media screen and (max-width: 998px){
+    .creative_container {
+        position: relative;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}

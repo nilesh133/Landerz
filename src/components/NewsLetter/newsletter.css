@@ -1,0 +1,73 @@
+.newsletter {
+    background-color: #f6f6f6;
+    padding: 80px 0;
+}
+
+.newsletter_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.newsletter_content_p  {
+    font-family: Lexend, sans-serif;
+    color: #abadb3;
+    font-weight: 300;
+    padding: 0 1rem;
+}
+
+.newsletter_content_input {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.6rem 0.6rem;
+    border-radius: 28px;
+    width: 500px;
+    height: 35px;
+    position: relative;
+}
+
+.newsletter_content_input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: Lexend, sans-serif;
+}
+
+.newsletter_content_input input::placeholder {
+    color: #000;
+    font-size: 1rem;
+    font-family: Lexend, sans-serif;
+    font-weight: 200;
+    color: #abadb3;
+}
+
+.newsletter_content_input_button {
+    width: 100px;
+    font-family: Lexend, sans-serif;
+    color: #fff;
+    background-color: #00d2b5 !important;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    padding: 0 0.4rem;
+    position: absolute;
+    right: 1.5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    height: 80%;
+}
+
+@media screen and (max-width: 768px){
+    .newsletter_content_input {
+        width: 90%;
+    }
+}
+
+/* .newsletter_content_input */
